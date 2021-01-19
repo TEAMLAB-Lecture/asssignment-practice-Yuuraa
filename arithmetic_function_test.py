@@ -27,8 +27,4 @@ class TestArithmeticFunction(unittest.TestCase):
         self.assertEqual(12/float(12), arithmetic_function.division(12, 12))
 
 if __name__ == '__main__':
-    testFuncs = TestArithmeticFunction()
-    testFuncs.test_addition()
-    testFuncs.test_minus()
-    testFuncs.test_multiplication()
-    testFuncs.test_division()
+    unittest.main()
