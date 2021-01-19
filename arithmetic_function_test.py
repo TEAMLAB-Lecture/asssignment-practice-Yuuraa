@@ -25,3 +25,10 @@ class TestArithmeticFunction(unittest.TestCase):
         self.assertEqual(float(2), arithmetic_function.division(10, 5))
         self.assertEqual(10/6.0, arithmetic_function.division(10, 6))
         self.assertEqual(12/float(12), arithmetic_function.division(12, 12))
+
+if __name__ == '__main__':
+    testFuncs = TestArithmeticFunction()
+    testFuncs.test_addition()
+    testFuncs.test_minus()
+    testFuncs.test_multiplication()
+    testFuncs.test_division()
